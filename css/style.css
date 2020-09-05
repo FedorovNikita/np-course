@@ -1076,6 +1076,15 @@ background-color: transparent;
 transition: .4s;
 color: #ffffff;
 }
+
+input::placeholder {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 31px;
+}
+
 .input-group input:focus {
     border-bottom: 2px solid #C4FF02;
 }
@@ -1911,8 +1920,8 @@ line-height: 22px;
 .flex-wrap-curator-bottom {
     flex-direction: column;
     align-items: center;
-    width: 270px;
-    margin: 0 auto;
+    /* width: 270px;
+    margin: 0 auto; */
     margin-top: 55px;
 }
 
@@ -1921,6 +1930,30 @@ line-height: 22px;
     line-height: 21px;
     text-align: center;
     margin-bottom: 40px;
+}
+
+input::placeholder {
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.selectize-control.single .selectize-input, .selectize-control.single .selectize-input input {
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.selectize-input input::placeholder {
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.selectize-dropdown .option {
+    font-size: 16px;
+}
+
+.selectize-dropdown-content {
+    padding-left: 30px;
+    padding-top: 30px;
 }
 
 .black-back h2 {
