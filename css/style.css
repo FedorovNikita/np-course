@@ -678,11 +678,14 @@ position: relative;
     line-height: 52px;
     display: inline-flex;
     color: #000000;   
-    padding-left: 41px;
     transition: .4s;
     cursor: pointer;
+    padding-left: 86px;
 }
 .accordion-count {
+    position: absolute;
+    left: 0;
+    top: 10px;
     font-style: normal;
 font-weight: normal;
 font-size: 30px;
@@ -1689,13 +1692,17 @@ color: #000000;
     margin-bottom: 50px;
 }
 
-.accocrdion-title {
+.accordion-item {
     position: relative;
+}
+
+.accocrdion-title {
     font-weight: 500;
     font-size: 22px;
     line-height: 28px;
     padding-left: 13px;
     transition: all .4s;
+    padding-left: 50px;
 }
 
 .accocrdion-title::after {
@@ -1706,7 +1713,7 @@ color: #000000;
     display: block;
     background-color: #000000;
     transform: rotate(-45deg);
-    right: -60px;
+    right: 2px;
     top: 4px;
 }
 
@@ -1718,7 +1725,7 @@ color: #000000;
     display: block;
     background-color: #000000;
     transform: rotate(-45deg);
-    right: -50px;
+    right: 0px;
 }
 
 
@@ -1740,6 +1747,7 @@ color: #000000;
     padding-top: 16px;
 }
 .accordion-count {
+    top: 4px;
     font-style: normal;
 font-weight: normal;
 font-size: 21px;
@@ -2116,4 +2124,23 @@ form hr {
   }
 
   
+}
+
+/* @media (max-width: 426px) {
+    .accocrdion-title::before {
+        right: 27px;
+    }
+    .accocrdion-title::after {
+        right: 30px;
+    
+    }
+} */
+
+@media (max-width: 400px) {
+    .accocrdion-title::before {
+        right: -30px;
+    }
+    .accocrdion-title::after {
+        right: -28px;
+    }
 }
