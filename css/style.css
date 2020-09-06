@@ -1702,7 +1702,7 @@ color: #000000;
     line-height: 28px;
     padding-left: 13px;
     transition: all .4s;
-    padding-left: 50px;
+    padding-left: 40px;
 }
 
 .accocrdion-title::after {
@@ -1714,7 +1714,7 @@ color: #000000;
     background-color: #000000;
     transform: rotate(-45deg);
     right: 2px;
-    top: 4px;
+    top: -4px;
 }
 
 .accocrdion-title::before {
@@ -1726,6 +1726,7 @@ color: #000000;
     background-color: #000000;
     transform: rotate(-45deg);
     right: 0px;
+    top: -8px;
 }
 
 
@@ -2126,21 +2127,9 @@ form hr {
   
 }
 
-/* @media (max-width: 426px) {
-    .accocrdion-title::before {
-        right: 27px;
+@media (max-width: 450px) {
+    .accocrdion-title {
+        padding-right: 10px;
     }
-    .accocrdion-title::after {
-        right: 30px;
-    
-    }
-} */
 
-@media (max-width: 400px) {
-    .accocrdion-title::before {
-        right: -30px;
-    }
-    .accocrdion-title::after {
-        right: -28px;
-    }
 }

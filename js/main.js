@@ -1,11 +1,3 @@
-  // $(window).scroll(function(){
-  //     if ($(this).scrollTop() > 100) {
-  //        $('header').addClass('fixed-header');
-  //     } else {
-  //        $('header').removeClass('fixed-header');
-  //     }
-  // });
-  
   var wow = new WOW(
       {
         boxClass:     'wow',      // animated element css class (default is wow)
@@ -55,11 +47,6 @@
       return false;
   });
   
-  // $(".burger").on("click",function(e){
-  // e.preventDefault();
-  // $('body').toggleClass("show-mobile-menu");
-  // });
-  
   
   $('form').on('submit', (event) => {
       event.preventDefault();
@@ -83,13 +70,10 @@
   
   });
 
-  // $(".accocrdion-title").on("click", function () {
-  //   $(".accrodion-item").removeClass("showed");
-  //   $(this).closest(".accrodion-item").addClass("showed");
-  // });
   $('.accordion').accordion({
     heightStyle: 'content',
-    header: '> .accordion-item > .accordion-header'
+    header: '> .accordion-item > .accordion-header',
+    collapsible: true
   });
 
   $("select").selectize({
