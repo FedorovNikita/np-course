@@ -45,9 +45,12 @@
     </header>
 <section class="main wow fadeIn" data-wow-delay="0.3s">
 <div class="container">
-    <!-- <img src="img/badge.png" class="main-badge" alt=""> -->
     <h1 class="main-title">Napoleon IT<br> Junior School</h1>
-    <img src="img/junior.png" class="main-junior" alt="">
+
+    <picture>
+        <source media="(max-width: 767px)" srcset="img/junior-mobile.png">
+        <img class="main-junior" src="img/junior.png" alt="Лого курса">
+    </picture>
       
     <div class="course-info-grid wow fadeIn"  data-wow-delay="0.3s">
         <span>Бесплатные<br>
@@ -69,7 +72,11 @@
 <section class="about wow fadeIn" data-wow-delay="0.3s" id="about">
 <div class="container">
     <span class="about-text wow fadeIn" data-wow-delay="0.3s">
-        <span>Napoleon IT&nbsp;Junior</span>&nbsp;&mdash; отличный первый шаг<br> для вашего ребенка, чтобы начать знакомство <br> с&nbsp;<nobr>IT-индустрией</nobr>. Широкий спектр образовательных<br> программ позволит подобрать направление<br> обучения согласно предпочтениям ученика
+        
+
+        <span>Napoleon IT&nbsp;Junior</span>&nbsp;– отличный первый шаг<br />
+        для вашего ребенка, чтобы начать знакомство<br />
+        с&nbsp;<nobr>IT-индустрией</nobr>. Широкий спектр образовательных<br> программ позволит подобрать направление<br> обучения согласно предпочтениям ученика
         <img src="img/about.png" alt="">
     </span>
 </div>
@@ -187,6 +194,7 @@
                     </span>
                     Курс поможет развить лидерские качества в&nbsp;рамках востребованной специальности. Создание собственного проекта, от, А&nbsp;до&nbsp;Я, изучение механизмов эффективного взаимодействия с&nbsp;людьми, управления и&nbsp;проектирования. 
                 </div>
+                <!-- <img src="img/smile.png" alt="" class="accordion__img-bg-smile"> -->
             </div>
             <div class="accordion-item">
                 <div class="accordion-header">
@@ -199,9 +207,12 @@
                     </span>
                     Всем юным блогерам сюда! Контент и&nbsp;продвижение в&nbsp;социальных сетях еще никогда не&nbsp;были такими простыми и&nbsp;понятными. Курс предусматривает обучение не&nbsp;только маркетингу, но&nbsp;и&nbsp;созданию контента, развитию вкуса и&nbsp;навыков грамотной письменной речи. 
                 </div>
+                
             </div>
+            <img src="img/smile.png" alt="" class="accordion__img-bg-smile">
+
         </div>
-        <img src="img/smile.png" alt="" class="accordion__img-bg-smile">
+        
     </div>
 </div>
 </section>
@@ -311,7 +322,7 @@
                     <input type="email" placeholder="E-mail" required="" name="email">
                    <select name="course" id="course">
                     <option></option> 
-                       <option value="Компьютерная грамотность для детей">Компьютерная грамотность для детей</option>
+                       <option value="Компьютерная грамотность">Компьютерная грамотность</option>
                        <option value="Дополненная реальность">Дополненная реальность</option>
                        <!-- <option value="Английский язык в IT">Английский язык в IT</option>
                        <option value="3D моделирование">3D моделирование</option>
