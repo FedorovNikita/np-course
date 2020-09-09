@@ -681,7 +681,47 @@ position: relative;
     transition: .4s;
     cursor: pointer;
     padding-left: 86px;
+
+    position: relative;
+    min-width: 600px;
 }
+
+.accocrdion-title::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    display: block;
+    background-color: #000000;
+    transform: rotate(45deg);
+    right: -98px;
+    top: 19px;
+}
+
+.accocrdion-title::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 10px;
+    display: block;
+    background-color: #000000;
+    transform: rotate(45deg);
+    right: -100px;
+    top: 15px;
+}
+
+
+
+.ui-accordion-header-active .accocrdion-title::after {
+    transform: rotate(-45deg);
+
+}
+
+.ui-accordion-header-active .accocrdion-title::before {
+    transform: rotate(-45deg);
+
+}
+
 .accordion-count {
     position: absolute;
     left: 0;
@@ -944,13 +984,14 @@ color: #000000;
     padding-top: 181px;
 }
 .curator-wrap {
-    height: 377px;
+    /* height: 377px; */
     background: #161616;
     border-radius: 24px;
     margin-bottom: 181px;
     padding-left: 75px;
     padding-top: 67px;
     padding-right: 75px;
+    padding-bottom: 67px;
 }
 .flex-wrap-curator-body {
     display: flex;
@@ -1727,43 +1768,21 @@ color: #000000;
     padding-left: 13px;
     transition: all .4s;
     padding-left: 40px;
+    
+    position: static;
+    min-width: auto;
 }
 
 .accocrdion-title::after {
-    content: '';
-    position: absolute;
-    width: 10px;
-    height: 2px;
-    display: block;
-    background-color: #000000;
-    transform: rotate(45deg);
     right: 2px;
     top: -4px;
 }
 
 .accocrdion-title::before {
-    content: '';
-    position: absolute;
-    width: 2px;
-    height: 10px;
-    display: block;
-    background-color: #000000;
-    transform: rotate(45deg);
     right: 0px;
     top: -8px;
 }
 
-
-
-.ui-accordion-header-active .accocrdion-title::after {
-    transform: rotate(-45deg);
-
-}
-
-.ui-accordion-header-active .accocrdion-title::before {
-    transform: rotate(-45deg);
-
-}
 
 .accordion-date {
     margin-bottom: 3px;

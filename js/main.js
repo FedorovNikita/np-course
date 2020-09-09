@@ -73,7 +73,8 @@
   $('.accordion').accordion({
     heightStyle: 'content',
     header: '> .accordion-item > .accordion-header',
-    collapsible: true
+    collapsible: true,
+    active: false
   });
 
   $("select").selectize({
