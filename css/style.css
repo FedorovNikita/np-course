@@ -316,6 +316,12 @@ textarea {
     vertical-align: top; /* 2 */
 }
 
+input {
+    border-radius: 0;
+    -webkit-appearance: none;
+    -webkit-border-radius:0px;
+}
+
 /* Slider */
 .slick-slider
 {
@@ -1533,6 +1539,15 @@ header {
     min-width: auto;
 }
 
+.main-title {
+    -webkit-filter: blur(20px);
+    filter: blur(20px);
+    -webkit-animation: blur .3s forwards;
+    animation: blur .6s forwards;
+    -webkit-animation-delay: .6s;
+    animation-delay: .6s
+}
+
 .menu-header {
     transform: translateY(-100%);
     position: fixed;
@@ -1775,12 +1790,14 @@ color: #000000;
 
 .accocrdion-title::after {
     right: 2px;
-    top: -4px;
+    top: 13px;
+    width: 8px;
 }
 
 .accocrdion-title::before {
     right: 0px;
-    top: -8px;
+    top: 10px;
+    height: 7px;
 }
 
 
@@ -1791,7 +1808,7 @@ color: #000000;
     padding-top: 16px;
 }
 .accordion-count {
-    top: 4px;
+    top: 2px;
     font-style: normal;
 font-weight: normal;
 font-size: 21px;
@@ -1992,6 +2009,23 @@ input::placeholder {
 .selectize-control.single .selectize-input, .selectize-control.single .selectize-input input {
     font-size: 16px;
     line-height: 21px;
+}
+
+.selectize-control.single .selectize-input:after {
+    content: url('../img/arrow-mobile.png');
+    border: none;
+    top: 42%;
+    right: 17px;
+    transform: rotate(180deg);
+    width: 16px;
+    height: 16px;
+    transform-origin: 50% 50% 0;
+    transition: .4s;
+}
+
+.selectize-control.single .selectize-input.dropdown-active:after {
+    top: 22%;
+    right: 9px;
 }
 
 .selectize-input input::placeholder {

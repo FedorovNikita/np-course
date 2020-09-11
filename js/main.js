@@ -100,3 +100,20 @@
       $(".gallery-mobile.slick-initialized").slick("unslick");
     }
   });
+
+  let selectizeControl = document.querySelector('.selectize-control');
+  let selec = document.querySelector('.selectize-input');
+  let selectizeDropdown = document.querySelector('.selectize-dropdown');
+  selectizeControl.addEventListener('click', () => {
+    if (selec.classList.contains('not-full')) {
+      selec.classList.toggle('dropdown-active');
+      selec.classList.toggle('input-active');
+      selec.classList.toggle('focus');
+      if (selec.classList.contains('dropdown-active')) {
+        console.log('click')
+        selectizeDropdown.style.display = "block";
+      } else {
+        selectizeDropdown.style.display = "none";
+      }
+    }
+  })
