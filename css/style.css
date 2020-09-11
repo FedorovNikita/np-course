@@ -1797,7 +1797,7 @@ color: #000000;
 .accocrdion-title::before {
     right: 0px;
     top: 10px;
-    height: 7px;
+    height: 8px;
 }
 
 
@@ -2014,9 +2014,8 @@ input::placeholder {
 .selectize-control.single .selectize-input:after {
     content: url('../img/arrow-mobile.png');
     border: none;
-    top: 42%;
     right: 17px;
-    transform: rotate(180deg);
+    transform: rotate(0deg);
     width: 16px;
     height: 16px;
     transform-origin: 50% 50% 0;
@@ -2024,8 +2023,9 @@ input::placeholder {
 }
 
 .selectize-control.single .selectize-input.dropdown-active:after {
-    top: 22%;
-    right: 9px;
+    top: 34%;
+    right: 27px;
+    transform: rotate(-180deg) !important;
 }
 
 .selectize-input input::placeholder {
